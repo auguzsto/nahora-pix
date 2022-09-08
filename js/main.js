@@ -115,11 +115,13 @@ addEventListener('submit', (event) => {
   "Matheus",
   "RJ",
   "PAGAMENTOJSV1",
-  + valor.value
+  + valor.value.toString().replace(",", ".")
   );
   const payload = pix.getPayload();
   console.log(payload);
   localStorage.setItem('url', payload)
 
   //document.getElementById('qrcode').innerHTML = "<img src=https://chart.googleapis.com/chart?chs=450x450&cht=qr&choe=ISO-8859-1&chl="+payload+">"
-})
+});
+
+$('#valor').mask('#.##0,00', {reverse: true});
