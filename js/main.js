@@ -123,4 +123,3 @@ addEventListener('submit', (event) => {
 
   //document.getElementById('qrcode').innerHTML = "<img src=https://chart.googleapis.com/chart?chs=450x450&cht=qr&choe=ISO-8859-1&chl="+payload+">"
 })
-//document.getElementById('qrcode').innerHTML = "<img src=https://chart.googleapis.com/chart?chs=450x450&cht=qr&chl="+payload+">"
