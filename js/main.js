@@ -109,6 +109,7 @@ class Pix {
 addEventListener('submit', (event) => {
   event.preventDefault();
   const valor = document.getElementById('valor');
+  const info = document.getElementById('info');
   const pix = new Pix(
   "auguzsto@gmail.com",
   "Javascript",
@@ -118,9 +119,8 @@ addEventListener('submit', (event) => {
   + valor.value.toString().replace(",", ".")
   );
   const payload = pix.getPayload();
-  console.log(payload);
-  localStorage.setItem('url', payload)
-
+  localStorage.setItem('url', payload);
+  localStorage.setItem('info', valor.value)
   //document.getElementById('qrcode').innerHTML = "<img src=https://chart.googleapis.com/chart?chs=450x450&cht=qr&choe=ISO-8859-1&chl="+payload+">"
 });
 
