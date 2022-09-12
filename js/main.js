@@ -116,7 +116,7 @@ addEventListener('submit', (event) => {
   "Matheus",
   "RJ",
   "PAGAMENTOJSV1",
-  + valor.value
+  + valor.value.toString().replace(",", ".")
   );
   const payload = pix.getPayload();
   localStorage.setItem('url', payload);
