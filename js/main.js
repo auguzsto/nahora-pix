@@ -114,7 +114,7 @@ addEventListener('submit', (event) => {
   "Javascript",
   "Matheus",
   "RJ",
-  "NAHORAPIX",
+  "NAHORAPIX-V1",
   + valor.value.toString().replace(",", ".")
   );
   const payload = pix.getPayload();
