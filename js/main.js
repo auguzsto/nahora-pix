@@ -109,13 +109,12 @@ class Pix {
 addEventListener('submit', (event) => {
   event.preventDefault();
   const valor = document.getElementById('valor');
-  //const chavepix = +5521983623711;
   const pix = new Pix(
-  "+5521983623711",
+  "auguzsto@gmail.com",
   "Javascript",
   "Matheus",
   "RJ",
-  "PAGAMENTOJSV1",
+  "NAHORAPIX",
   + valor.value.toString().replace(",", ".")
   );
   const payload = pix.getPayload();
