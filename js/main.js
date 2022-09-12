@@ -120,7 +120,6 @@ addEventListener('submit', (event) => {
   const payload = pix.getPayload();
   localStorage.setItem('url', payload);
   localStorage.setItem('info', valor.value)
-  //document.getElementById('qrcode').innerHTML = "<img src=https://chart.googleapis.com/chart?chs=450x450&cht=qr&choe=ISO-8859-1&chl="+payload+">"
 });
 
 $('#valor').mask('#.##0,00', {reverse: true});
